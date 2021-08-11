@@ -9,22 +9,25 @@ const altLogo = document.getElementById("alt_logo");
 
 const parallax1 = document.getElementById("parallax1");
 const parallax2 = document.getElementById('parallax2');
+const header = document.getElementById('header');
 
 const scrollDownClick = document.getElementById("scroll-down");
 
 console.log(parallax1);
 
 
-// window.addEventListener("scroll", function(){
-// 	let offset = window.pageYOffset;
-// 	parallax1.style.backgroundPositionY = offset * 0.7 + "px";
-// 	if(offset >=599){
-// 		altLogo.style.display="block";
-// 	}
-// 	else {
-// 		altLogo.style.display="none";
-// 	}
-// });
+window.addEventListener("scroll", function(){
+	let offset = window.pageYOffset;
+	parallax1.style.backgroundPositionY = offset * 0.7 + "px";
+	if(offset >=599){
+		altLogo.style.display="block";
+		// $(header).toggleClass("scrolled");
+	}
+	else {
+		altLogo.style.display="none";
+		// header.removeClass("scrolled");
+	}
+});
 
 
 
@@ -92,15 +95,15 @@ const gcDiv = document.getElementById('gencon-full');
 
 console.log(brandIcon);
 
-brandIcon.addEventListener("click", function(){
-	smoothScroll('.branding-full', 950, 555)
-	if(brandDiv.style.display === "none"){
-		brandDiv.style.display = "block";
-	}
-	else {
-		brandDiv.style.display = "none";
-	}
-})
+// brandIcon.addEventListener("click", function(){
+// 	smoothScroll('.branding-full', 950, 555)
+// 	if(brandDiv.style.display === "none"){
+// 		brandDiv.style.display = "block";
+// 	}
+// 	else {
+// 		brandDiv.style.display = "none";
+// 	}
+// })
 
 gcICON.addEventListener("click", function(){
 	smoothScroll('.branding-full', 950, 555)
