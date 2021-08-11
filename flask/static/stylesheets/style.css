@@ -1,0 +1,674 @@
+* {
+	font-family: Oswald;
+	padding: 0;
+	margin: 0;
+}
+
+
+p {
+	font-weight: 200;
+}
+
+
+
+
+
+body {
+	/*background-image: url("logo bckgrnd-01.png");*/
+/*	background-attachment: fixed;
+/**/	/*top: 95px;*/
+	/*background-size: 100vw;
+	background-repeat: no-repeat;*/
+	/*height: 400px;*/
+}
+
+  
+header {
+	position: fixed;
+	top: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(44, 88, 168, 1);
+	color: white;
+	z-index: 1;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	
+}
+
+
+.scrolled {
+	height: 100px;
+}
+
+
+
+.contact {
+	border: 1.5px solid limegreen;
+	border-radius: 2em;
+	float: right;
+	/*margin: .5em;*/
+	transition: background 250ms ease-in-out;
+	letter-spacing: 1px;
+	padding: .25em 1em;
+	background: limegreen;
+	color: white;
+	margin-top: 5px;
+	margin-right: 20px;
+	outline: white;
+}
+
+.contact:hover {
+	background: white;
+	color: #282828;
+	border: #282828;
+}
+
+
+
+
+/*====================================================
+===============NAV BAR==================================*/
+
+
+
+.site-nav {
+	position: absolute;
+	transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+	top: 100%;
+	background-color: #3d3d3d;
+	margin-left:20px;
+	height: 0px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.site-nav li {
+    list-style: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+
+}
+
+.site-nav li:last-child {
+	border-bottom: none;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em 1em;
+}
+
+
+.menu-toggle {
+	padding: 1em;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 7px;
+	cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	display: block;
+	background: white;
+	height: 3px; 
+	width: 1.75em;
+	border-radius: 2px;
+	transition: all ease-in-out 300ms;
+}
+
+.hamburger::before {
+	transform: translateY(-6px);
+}
+
+.hamburger::after {
+	transform: translateY(3px);
+}
+
+
+.nav-open {
+	height: auto;
+}
+
+
+.open .hamburger {
+	transform: rotate(45deg);
+	border-radius: 2px;
+
+}
+
+.open .hamburger::before {
+	opacity: 0;
+	transition: opacity 0ms;
+}
+
+.open .hamburger::after {
+	transform: translateY(-3px) rotate(-90deg);
+	border-radius: 2px;
+}
+
+
+nav a:hover {
+    color:black;
+    text-decoration: none;
+    background-color: limegreen;
+}
+
+
+.alt_logo {
+	margin-left: 80px;
+	margin-top: 12px;
+}
+
+ /*=====================================================
+ =====================END NAV BAR BEGIN SCROLL BUTTON====================*/
+
+.scroll-down {
+	height: 75px;
+	width: 40px;
+	border: 2px solid #282828;
+	border-radius: 25px;
+	cursor: pointer;
+	position: absolute;
+	right: 5%;
+	top: 70vh;
+	background: rgba(255, 255, 255, .8);
+	transition: opacity 500ms;
+
+}
+.scroll-down::before,
+.scroll-down::after {
+	content: '';
+	position: absolute;
+	top: 20%;
+	left:50%;
+	border: 2px solid #282828;
+	height: 20px;
+	width: 20px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: transparent;
+	border-left: transparent;
+	animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+	top: 35%;
+	animation-delay: .3s;
+}
+
+@keyframes scroll-down {
+	0%{
+		opacity: 0;
+	}
+	30%{
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0;
+		top: 90%;
+	}
+	100% {
+		opacity: 0;
+		top: 90%;
+	}
+}
+
+
+/*================================================
+======================PARALLAX==========================*/
+
+
+
+
+.parallax1 {
+	/* background-image: url({ url_for('static', filename='img/logobackground.png')}} ); */
+	background-image: url('/static/img/logobackground.png');
+	background-position: 1;
+	min-height: 90vh;
+    background-size: 100vw;
+	background-repeat: no-repeat;
+}
+
+
+.tagline {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
+	height: 15px;
+	/*top: 300px;*/
+	color: rgba(44, 88, 168, 1);
+	font-family: Rubik;
+	/*background-image: url("lilly-murral-tower-sliver.jpg");*/
+	background-size: 100vw;
+	opacity: ./*8*/;
+	background-repeat: no-repeat;
+	padding: 10px;
+	text-align: center;
+	/*border-top: solid white 10px;
+	border-bottom: solid white 10px;*/
+	/*margin-bottom: 50px;*/
+
+}	
+
+
+.tagline ul {
+	list-style: none;
+}
+
+.tagline li {
+	display: inline;
+	padding: 0 15px;
+	font-size: 35px;
+	/*text-shadow: 4px 4px rgba(0,0,0,.2);*/
+	opacity: 1;
+
+}
+
+
+
+
+/*================================================
+======================CHANGE IS LOCAL==========================*/
+
+
+
+.box1 {
+	height: 680px;
+	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
+	color: #282828;
+	text-align: center;
+	padding: 40px;
+	/*background-image: url("img/politics are local.png");
+	background-size: 180vw;
+	background-repeat: no-repeat;*/
+
+}
+
+.box1 h1 h2 {
+	color: rgba(44, 88, 168, 1);
+	margin: 40px;
+}
+
+.box1 h3 {
+	font-weight: 200;
+}
+
+
+
+footer {
+	height: 60px;
+	background-image: url("img/lilly-murral-tower-sliver.jpg");
+	background-size: 100vw;
+	color: white;
+	padding: 5px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	border-top: 3px solid white;
+}
+
+footer p {
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+}
+
+
+
+
+/*=====================================================================
+================================CAMPAIGN WORK PAGE================================
+========================================================================================
+==========================================================================================*/
+
+.work-document {
+	background-image: url("static/img/murral-vertical-01.png");
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-attachment: fixed;
+
+}
+
+
+/*================================
+================HERO===================*/
+
+.campaign-hero-container {
+	/*background-image: url("img/murral-vertical.pmg");*/
+	background-size: 100vh;	
+}
+
+
+
+.campaign-hero {
+	/*padding: 40px;*/
+	text-align: right;
+	
+	margin-top: 70px;
+	right:0;
+	
+	position: fixed;
+	z-index: 1;
+	
+}
+
+.campaign-hero h1 {
+	font-weight: 200;
+	padding-bottom: 5px;
+	height: 55px;
+	width: 215px;
+	margin-bottom: 25px;
+	background-color:rgba(255, 255, 255);
+	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
+	right: 0px;
+	/*padding-right: 15px;*/
+	text-align: center;
+
+}
+
+.campaign-hero h3 {
+	font-weight: 200;
+	font-size: 22px;
+	/*margin-left: 25px;*/
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	right: 0;
+	padding-right: 15px;
+	background-color:rgba(255, 255, 255);
+	text-align: center;
+	/*box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);*/
+	
+}
+
+
+.campaign-hero a {
+	color: #282828;
+}
+
+.campaign-hero a:hover {
+    text-decoration: none;
+	color: limegreen;
+	background-color: #282828;
+}
+
+
+/*==================================
+=================Section headers ===========*/
+
+.section-header {
+	height: 80px;
+	width:80vw;
+
+}
+.section-header-content {
+	background-color: rgba(44, 88, 168, 1);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.section-header h1 {
+	/*margin-left: 15%;*/
+	padding: 5px;
+	color: white;
+}
+
+
+
+
+
+
+/*==================================
+=================Work Overview====================*/
+
+
+
+.work-overview {
+	height: 800px;
+	width: 80vw;
+	margin-top: 10px;
+
+
+}
+
+
+.overview-inner {
+	height: 600px;
+	width: 75%;
+	padding: 20px;
+	background-color:rgba(255, 255, 255, .5);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+
+
+
+/*==================================
+=================ICONS====================*/
+
+
+
+.above-all {
+	content: '';
+	height:10px;
+	margin-bottom: 100px;
+}
+
+.icon-container {
+	height: 1200px;
+	width: 80vw;
+}
+.icon-inner {
+	height: 1000px;
+	width: 75%;
+	/*padding: 20px;*/
+	background-color:rgba(255, 255, 255, .5);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	margin: 0 auto;
+	position: relative;
+
+}
+
+
+.row {
+	margin: 30px;
+} 
+
+
+
+.icon-table .col {
+		/*margin-bottom: -850px;*/
+
+}
+
+
+.icon-table {
+	
+	height: 275px;
+	width: 75vw;
+	
+
+} 
+
+
+
+.icon-table .row {
+	margin-left: -70px;
+	margin-right: 120px;
+	padding: 20px;
+ }
+
+.description {
+	width: 75%;
+	margin-left: 50px;
+}
+
+
+
+.icons {
+	height: 100px;
+
+
+}
+
+.icon-description {
+	padding-left: 100px;
+	/*margin-left: 100px;*/
+}
+
+
+
+
+
+/*======================================
+=====================Brand Elements========= */
+
+.carousel-container {
+	height: 900px;
+	width: 80vw;
+}
+
+
+
+.carousel {
+	/*top: 400PX;*/
+	position: relative;
+	height: 700px;
+	width: 75%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, .5);
+	padding: 40px;
+	/*margin-bottom: 100px;*/
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.brand-dev-images {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel__track-container {
+	position: relative;
+	height:100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel__track {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	height: 100%;
+	transition: transform 350ms ease-in;
+
+
+}
+
+.carousel__slide {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	object-fit: cover;
+	
+}
+
+.carousel__button--left {
+	position: absolute;
+	left: -60px;
+	top: 50%;
+	width: 15px;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: 0;
+
+	
+}
+
+.carousel__button--right  {
+	position: absolute;
+	right: -60px;
+	top: 50%;
+	width: 15px;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: 0;
+
+	
+}
+
+
+.carousel__button--right:focus {
+	outline: none;
+}
+
+.carousel__button--left:focus {
+	outline: none;
+}
+
+
+.carousel__nav {
+/*	background: pink;
+*/	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.carousel__indicator {
+	border: 0;
+	border-radius: 50px;
+	width: 15px;
+	height: 15px;
+	background: #282828;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+
+
+.carousel__indicator:focus {
+	border: none;
+	outline: none;
+}
+
+
+.carousel__indicator.current-slide {
+	background-color: rgba(44, 88, 168, 1);
+}
+
+
+.is-hidden {
+	display: none;
+}
+
+
+/*==========================END CAROUSEL
+===============================================*/
+.below-carousel {
+	height: 1600px;
+	top: 1400px;
+}
+
+
+
+
+
+
