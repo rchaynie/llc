@@ -9,6 +9,10 @@ p {
 	font-weight: 200;
 }
 
+body {
+	/* width: 100vw; */
+}
+
 
   
 header {
@@ -18,7 +22,7 @@ header {
     height: 50px;
     background-color: #f1f8f0;
 	color: white;
-	z-index: 999;
+	z-index: 999999;
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
 	transition: background 250ms ease-in-out;
 	
@@ -261,8 +265,7 @@ nav a:hover {
 	background-image: url('/static/img/nyc-background.jpg');
 	background-attachment: fixed;
 	top: 0;
-	background-size: 100%;
-
+	/* background-size: 100vw; */
     background-size: cover; 
 	background-repeat: no-repeat;
 	z-index: -1;
@@ -278,23 +281,21 @@ nav a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40%;
-	padding-top: 18vh;
+	padding-top: 10vh;
 }
 
 
 .tagline {
-	height: 15px;
-	/*top: 300px;*/
+	height: 10px;
 	color: #f2f9f1;
 	font-family: Rubik;
 	text-transform: uppercase;
 	background-color: rgba(0,0,0,0);
 	background-size: 100vw;
 	background-repeat: no-repeat;
-	padding: 10px;
 	text-align: center;
 	margin-top: 100px;
-	margin: -25% 10px 70px 10px;
+	margin: -25% 10px 50px 10px;
 	/* margin-bottom: 70px; */
 	transform-origin: top left;
 	transform: skewY(-7deg);
@@ -334,15 +335,12 @@ nav a:hover {
 	height: 600px;
 	width: 100%;
 	position: relative;
-	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
 	color: #282828;
-	/* padding: 40px 100px; */
 	background: #f2f9f1;
 	z-index: 1;
 	padding: 20px;
 	border-bottom: solid white 10px;
-	margin-top: 30px;
-	/* display: grid; */
 }
 
 .box1:after {
@@ -362,13 +360,14 @@ nav a:hover {
 
 .first-line {
 	display: grid;
-	margin-top: 5%;
+	margin-top: 1%;
+	margin-bottom: 10px;
+
 }
 
 
 .first-line h1 {
 	margin-top: 40px;
-	margin-bottom: 40px;
 	font-size: 3em;
 	letter-spacing: 5px;
 	padding-left: 5%;
@@ -379,12 +378,12 @@ nav a:hover {
 .box1 h3 {
 	font-weight: 200;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 15px;
 	font-size: 40px;
 }
 
 .black-top {
-	height: 125px;
+	height: 0px;
 	margin-top: 10%;
 	padding-right: 15%;
 	margin-bottom: 55px; 
@@ -402,17 +401,22 @@ nav a:hover {
 	margin-bottom: 5px;
 
 
+
 }
 
 .option {
 	height: 150px;
-	border-bottom: solid white 5px;
+	/* border-bottom: solid white 5px; */
 	padding: 40px;
 	border-top: solid white 5px;
+	z-index: 1;
+	background-color: white;
+
 }
 
 .learn-more, .explore, .shoutout {
 	position: relative;
+
 }
 
 .learn-more:after, .shoutout:after {
@@ -428,6 +432,7 @@ nav a:hover {
 	content: '';
 	z-index: -1;
 
+
 }
 
 .explore:after {
@@ -442,6 +447,8 @@ nav a:hover {
 	bottom: 0;
 	content: '';
 	z-index: -1;
+	box-shadow: 0 20px 0px rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -534,7 +541,7 @@ footer {
 	background-size: 100vw;
 	color: #282828;
 	padding: 5px;
-	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
+	position: fixed;
 	border-top: 3px solid white;
 	margin-top: -5px;
 	/* position: fixed; */
@@ -632,7 +639,6 @@ footer p {
 .section-header {
 	height: 80px;
 	width:80vw;
-
 }
 .section-header-content {
 	background-color: rgba(44, 88, 168, 1);
@@ -917,6 +923,8 @@ footer p {
 	.logo {
 	display: block;
 	margin-bottom: 25%;
+	padding-top: 18vh;
+
 
 	width: 25%;
 	margin-left: 10vw;
@@ -935,5 +943,20 @@ footer p {
 	.scroll-down::after {
 	width: 20px;
 }
+
+	.black-top {
+		height: 125px;
+	}
+
+	.first-line {
+		margin-top: 5%;
+		margin-bottom: 40px;
+	}
+
+	.box1 h3 {
+		margin-top: 40px;
+	}
+
+
 }
 
