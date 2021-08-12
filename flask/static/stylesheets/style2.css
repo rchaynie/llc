@@ -20,16 +20,22 @@ header {
 	color: white;
 	z-index: 999;
 	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	transition: background 250ms ease-in-out;
+	
+
 }
 
 .scrolled {
 	background: #282828;
+	height: 45px;
+	transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+	transition: background 250ms ease-in-out;
+	color: white;
+
 }
 
 
-.scrolled {
-	height: 100px;
-}
+
 
 
 
@@ -49,11 +55,20 @@ header {
 }
 
 .contact:hover {
-	background: white;
-	color: #282828;
+	background: #282828;
+	color: white;
 	border: #282828;
 }
 
+
+.scrolledButton {
+	background: #282828;
+	height: 45px;
+	border: 1.5px solid white;
+	transition: background 250ms ease-in-out;
+	color: white;
+
+}
 
 
 
@@ -65,7 +80,6 @@ header {
 .site-nav {
 	position: absolute;
 	float: right;
-	/* transition: transform 300ms cubic-bezier(.5, 0, .5, 1); */
 	top: 100%;
 	background-color: #3d3d3d;
 	/* margin-right:2000px; */
@@ -103,9 +117,7 @@ nav a {
 
 .menu-toggle {
 	padding: 1em;
-	/* position: absolute; */
 	float: right;
-	/* margin-left: 95%; */
 	margin-right: 20px;
 	margin-top: 7px;
 	cursor: pointer;
@@ -122,6 +134,13 @@ nav a {
 	border-radius: 2px;
 	transition: all ease-in-out 300ms;
 }
+
+.burgerScroll {
+	background: white;
+	color: white;
+}
+
+
 
 .hamburger::before {
 	transform: translateY(-6px);
@@ -164,17 +183,19 @@ nav a:hover {
 
 
 .alt_logo {
-	margin-left: 80px;
+	margin-left: 130px;
 	margin-top: 12px;
+	color: #white;
+
 }
 
  /*=====================================================
  =====================END NAV BAR BEGIN SCROLL BUTTON====================*/
 
 .scroll-down {
-	height: 100px;
-	width: 55px;
-	border: 2px solid #f2f9f1;
+	height: 0px;
+	width: 0px;
+	border: 0px solid #f2f9f1;
 	border-radius: 75px;
 	cursor: pointer;
 	position: absolute;
@@ -192,8 +213,8 @@ nav a:hover {
 	top: 20%;
 	left:50%;
 	border: 2px solid #f2f9f1;
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 0px;
 	transform: translate(-50%, -50%) rotate(45deg);
 	border-top: transparent;
 	border-left: transparent;
@@ -203,6 +224,7 @@ nav a:hover {
 .scroll-down::after {
 	top: 35%;
 	animation-delay: .3s;
+	width: 0px;
 }
 
 @keyframes scroll-down {
@@ -236,14 +258,28 @@ nav a:hover {
 
 
 .parallax1 {
-	/* background-image: url({ url_for('static', filename='img/logobackground.png')}} ); */
-	background-image: url('/static/img/nyc-logo-01.png');
-	background-position: 1;
-	min-height: 100vh;
-    background-size: 100vw;
+	background-image: url('/static/img/nyc-background.jpg');
+	background-attachment: fixed;
+	top: 0;
+	background-size: 100%;
+
+    background-size: cover; 
 	background-repeat: no-repeat;
+	z-index: -1;
+
+	
+	
 }
 
+
+.logo {
+	display: block;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40%;
+	padding-top: 18vh;
+}
 
 
 .tagline {
@@ -252,11 +288,13 @@ nav a:hover {
 	color: #f2f9f1;
 	font-family: Rubik;
 	text-transform: uppercase;
+	background-color: rgba(0,0,0,0);
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	padding: 10px;
 	text-align: center;
-	margin: -8% 10px 70px 10px;
+	margin-top: 100px;
+	margin: -25% 10px 70px 10px;
 	/* margin-bottom: 70px; */
 	transform-origin: top left;
 	transform: skewY(-7deg);
@@ -274,7 +312,8 @@ nav a:hover {
 .tagline li {
 	display: inline;
 	padding: 0 5px;
-	font-size: 45px;
+	font-size: 4vw;
+	margin-bottom: 1px;
 	/*text-shadow: 4px 4px rgba(0,0,0,.2);*/
 	opacity: 1;
 	text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
@@ -292,20 +331,18 @@ nav a:hover {
 
 
 .box1 {
-	height: 400px;
+	height: 600px;
 	width: 100%;
 	position: relative;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
 	color: #282828;
 	/* padding: 40px 100px; */
 	background: #f2f9f1;
 	z-index: 1;
-	padding: 5% 0;
-	
-
-
-	
-	
+	padding: 20px;
+	border-bottom: solid white 10px;
+	margin-top: 30px;
+	/* display: grid; */
 }
 
 .box1:after {
@@ -323,15 +360,19 @@ nav a:hover {
 	z-index: -1;
 }
 
+.first-line {
+	display: grid;
+	margin-top: 5%;
+}
 
-.box1 h1 {
+
+.first-line h1 {
+	margin-top: 40px;
 	margin-bottom: 40px;
-	font-size: 75px;
-	text-align: left;
-	/* float: left; */
-	display: inline-block;
+	font-size: 3em;
 	letter-spacing: 5px;
 	padding-left: 5%;
+	grid-column: 1/3;
 
 }
 
@@ -343,14 +384,11 @@ nav a:hover {
 }
 
 .black-top {
-	height: 60%;
-	float: right;
-	/* margin-right: 5%; */
-	display: inline-block;
-	padding-bottom: 5px;
-	padding-right: 5%;
-
-
+	height: 125px;
+	margin-top: 10%;
+	padding-right: 15%;
+	margin-bottom: 55px; 
+	grid-column: 3/3;
 }
 
 
@@ -358,26 +396,121 @@ nav a:hover {
 ======================OPTIONS==========================*/
 
 .options {
-	height: 525px;
+	height: 450px;
+	padding: 0;
+	margin-top: -5px;
+	margin-bottom: 5px;
+
 
 }
 
 .option {
-	height: 175px;
+	height: 150px;
+	border-bottom: solid white 5px;
+	padding: 40px;
+	border-top: solid white 5px;
 }
 
-.learn-more {
-	background:blue;
-	/* margin-top: 100px; */
+.learn-more, .explore, .shoutout {
+	position: relative;
 }
 
-.explore {
-	background: green;
+.learn-more:after, .shoutout:after {
+	position: absolute;
+	transform-origin: bottom left;
+	transform: skewX(-11deg);
+	background-color: #00b8ff;
+	height: 100%;
+	width: 45%;
+	Top: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	z-index: -1;
+
 }
 
-.shoutout {
-	background: pink;
+.explore:after {
+	position: absolute;
+	transform-origin: bottom right;
+	transform: skewX(-11deg);
+	background-color: #00b8ff;
+	height: 100%;
+	width: 45%;
+	Top: 0;
+	left: 0;
+	bottom: 0;
+	content: '';
+	z-index: -1;
+
 }
+
+
+.learn-more h3 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.shoutout h3 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+
+.explore h3 {
+	float: right;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.learn-more-button, 
+.shoutout-button {
+	background: #f1f8f0;
+	border: solid #282828;
+	color: #282828;
+	text-align: center;
+	padding: 10px 50px;
+	float: right;
+	margin-right: 40px;
+	font-size: 25px;
+	transition: background 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+	transition: border 250ms ease-in-out;
+}
+
+
+
+
+.explore-button {
+	background: #f1f8f0;
+	border: solid #282828;
+	color: #282828;
+	text-align: center;
+	padding: 10px 50px;
+	float: left;
+	margin-left: 40px;
+	font-size: 25px;
+	transition: background 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+	transition: border 250ms ease-in-out;
+}
+
+
+.learn-more-button:hover,
+.explore-button:hover,
+.shoutout-button:hover {
+	background: #282828;
+	border: solid #f1f8f0;
+	color: #f1f8f0;
+}
+
+
+
 
 
 
@@ -395,13 +528,17 @@ nav a:hover {
 
 
 footer {
+	display: none;
 	height: 60px;
 	background: #f1f8f0;
 	background-size: 100vw;
-	color: white;
+	color: #282828;
 	padding: 5px;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
 	border-top: 3px solid white;
+	margin-top: -5px;
+	/* position: fixed; */
+	z-index: 15;
 }
 
 footer p {
@@ -758,4 +895,45 @@ footer p {
 
 
 
+
+@media (min-width: 900px) {
+	.parallax1 {
+		background-position: fixed;
+	}
+	.tagline {
+		margin: -10% 10px 70px 10px;
+		/* white-space: nowrap; */
+
+	}
+
+	.tagline ul {
+		/* display: block; */
+	}
+
+	.tagline li {
+		/* font-size: 4vw; */
+	}
+
+	.logo {
+	display: block;
+	margin-bottom: 25%;
+
+	width: 25%;
+	margin-left: 10vw;
+	margin-right: auto;
+
+	 }
+	 
+	 .scroll-down {
+		 height: 80px;
+		 width: 35px;
+		 border: 2px solid #f2f9f1;
+
+	 }
+
+	.scroll-down::before,
+	.scroll-down::after {
+	width: 20px;
+}
+}
 

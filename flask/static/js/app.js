@@ -7,25 +7,32 @@ $('.menu-toggle').click(function() {
 
 const altLogo = document.getElementById("alt_logo");
 
-const parallax1 = document.getElementById("parallax1");
-const parallax2 = document.getElementById('parallax2');
+// const parallax1 = document.getElementById("parallax1");
+// const parallax2 = document.getElementById('parallax2');
 const header = document.getElementById('header');
-
+const contactButton = document.getElementById('contact-button');
 const scrollDownClick = document.getElementById("scroll-down");
+const burger = document.getElementById("burger");
 
-console.log(parallax1);
+console.log(burger);
 
 
 window.addEventListener("scroll", function(){
 	let offset = window.pageYOffset;
-	parallax1.style.backgroundPositionY = offset * 0.7 + "px";
+	// parallax1.style.backgroundPositionY = offset * 0.7 + "px";
 	if(offset >=599){
-		altLogo.style.display="block";
-		// $(header).toggleClass("scrolled");
+		altLogo.style.display="block", 250;
+		header.classList.add("scrolled");
+		// contactButton.classList.add("ScrolledButton");
+		burger.classList.add("burgerScroll");
 	}
 	else {
 		altLogo.style.display="none";
-		// header.removeClass("scrolled");
+		header.classList.remove("scrolled");
+		// contactButton.classList.remove("ScrolledButton");
+		burger.classList.remove("burgerScroll");
+
+
 	}
 });
 
