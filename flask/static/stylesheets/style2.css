@@ -535,7 +535,7 @@ nav a:hover {
 }
 
 .data h1{
-	margin-left: 10px;
+	/* margin-left: 10px; */
 	margin-top: 5%;
 	font-weight: 200;
 }
@@ -632,8 +632,8 @@ nav a:hover {
 
 .shoutout h1 {
 	font-weight: 200;
-	margin-top: 5%;
-	margin-left: 10px;
+	margin-top: 3%;
+	/* margin-left: 12px; */
 	color: #f2d540;
 	/* float: left; */
 }
@@ -1049,6 +1049,131 @@ footer p {
 
 
 
+/* ==============================================================
+============================================================================================================================
+========================================================BEGIN ABOUT PAGE================================================ */
+
+.about-full {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-auto-flow: column;
+	text-align: center;
+}
+
+.left-panel {
+	width: 35vw;
+	height: 100vh;
+	background: #f1f8f0;
+	position: fixed;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	z-index: 100;
+
+}
+
+.title-orange {
+	background: #e06d3f;
+	border-radius: 12em;
+	/* margin-left: 10vw; */
+	width: 100%;
+	height: 75%;
+	margin-top: -20vh;
+	padding-top: 40vh;
+	color: #f1f8f0;
+}
+
+.white-top-about {
+	width: 70%;
+	margin-top: 5%;
+}
+
+.title-orange h1 {
+	font-size: 400%;
+}
+
+.right-panel {
+	
+}
+
+.photo {
+	content: '';
+	height: 90vh;
+	width: 100vw;
+	/* background-image: url("/static/img/headshot-background-01.png"); */
+	/* background-repeat: no-repeat;
+	background-position: 35vw;
+	background-size: 100%;
+	z-index: -900;
+	margin-top: 30px; */
+
+	/* padding-left: 15%; */
+	/* margin-left: 35vw; */
+}
+
+.headshot {
+	/* display: block; */
+	/* margin-left: auto; */
+	width: 50%;
+	/* margin-top: 255vh;  */
+	margin-left:45vw;
+	/* z-index: -500; */
+}
+
+
+
+
+.about-info {
+	height: 180px;
+	width: 100vw;
+	text-align: justify;
+	padding: 15px 35px;
+	position: relative;
+	z-index: 1;
+}
+
+.about-info:after {
+	position: absolute;
+	background: #d3eaed;
+
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top left;
+	transform: skewY(-3deg);
+	content: '';
+	z-index: -1;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-info p {
+	margin-left: 37vw;
+	margin-right: 2vw;
+	}
+
+
+.gap {
+	height: 85vh;
+	
+}
+
+
+
+
+
+
+
+
+
+/* ==============================================================
+============================================================================================================================
+========================================================BEGIN NON-CAMP PAGE================================================ */
+
+
+
+
 
 
 @media (min-width: 900px) {
@@ -1104,8 +1229,8 @@ footer p {
 
 	.box1 h3 {
 		margin-top: 40px;
+		
 	}
-
 
 }
 
