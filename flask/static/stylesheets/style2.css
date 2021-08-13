@@ -478,7 +478,7 @@ nav a:hover {
 ======================OPTIONS==========================*/
 
 .options {
-	height: 450px;
+	height: 650px;
 	padding: 0;
 	margin-top: -5px;
 	margin-bottom: 5px;
@@ -488,7 +488,7 @@ nav a:hover {
 }
 
 .option {
-	height: 400px;
+	height: 500px;
 	/* border-bottom: solid white 5px; */
 	padding: 40px;
 	/* border-top: solid white 5px; */
@@ -497,18 +497,22 @@ nav a:hover {
 
 }
 
-.learn-more, .explore, .data {
+.data, .shoutout {
 	position: relative;
 
 }
 
-.learn-more:after, .data:after {
+.shoutout {
+	background: #282828;
+}
+
+.data:after {
 	position: absolute;
 	transform-origin: bottom left;
 	transform: skewX(-11deg);
 	background-color: #e06d3f;
 	height: 100%;
-	width: 65%;
+	width: 65vw;
 	Top: 0;
 	right: 0;
 	bottom: 0;
@@ -518,23 +522,30 @@ nav a:hover {
 
 }
 
-.explore:after {
+
+
+.shoutout:after {
 	position: absolute;
 	transform-origin: bottom right;
-	transform: skewX(-11deg);
-	background-color: #00b8ff;
+	transform: skewX(11deg);
+	background-color: white;
 	height: 100%;
-	width: 45%;
+	width: 55vw;
 	Top: 0;
 	left: 0;
 	bottom: 0;
 	content: '';
 	z-index: -1;
-	box-shadow: 0 20px 0px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 20px 0px rgba(0, 0, 0, 0.4); */
 
 
 }
 
+
+.shoutout h1 {
+	font-weight: 200;
+	margin-top: 10%;
+}
 
 
 
@@ -578,22 +589,6 @@ nav a:hover {
 
 
 
-
-.explore-button {
-	background: #f1f8f0;
-	border: solid #282828;
-	color: #282828;
-	text-align: center;
-	padding: 10px 50px;
-	float: left;
-	margin-left: 40px;
-	font-size: 25px;
-	transition: background 250ms ease-in-out;
-	transition: color 250ms ease-in-out;
-	transition: border 250ms ease-in-out;
-}
-
-
 .learn-more-button:hover,
 .explore-button:hover,
 .data-button:hover {
@@ -605,33 +600,17 @@ nav a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-	display: none;
 	height: 60px;
 	background: #f1f8f0;
 	background-size: 100vw;
 	color: #282828;
 	padding: 5px;
-	position: fixed;
-	border-top: 3px solid white;
-	margin-top: -5px;
 	/* position: fixed; */
-	z-index: 15;
+	border-top: 3px solid white;
+	/* margin-top: -5px; */
+	/* position: fixed; */
+	/* z-index: 999; */
 }
 
 footer p {
