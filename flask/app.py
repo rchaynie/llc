@@ -1,6 +1,6 @@
 import os
 from flask import Flask, jsonify, render_template, request, make_response
-from flask_pymongo import PyMongo
+# from flask_pymongo import PyMongo
 import requests
 import json
 import pandas as pd
