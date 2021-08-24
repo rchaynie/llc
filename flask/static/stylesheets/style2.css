@@ -728,11 +728,11 @@ footer p {
 ==========================================================================================*/
 
 .work-document {
-	/* background-image: url("static/img/murral-vertical-01.png");
+	background-image: url("/static/img/work-backing.png");
 	background-repeat: no-repeat;
 	background-size: 100vw;
-	background-attachment: fixed; */
-	background: white;
+	/* background-attachment: fixed; */
+	/* background-color: #fff; */
 	color: #282828;
 
 }
@@ -772,38 +772,29 @@ footer p {
 .work-left-panel {
 	width: 20vw;
 	height: 100vh;
-	background: #f1f8f0;
+	/* background: white; */
 	position: fixed;
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
 	z-index: 100;
 	color: #282828;
-	padding-top: 100px;
+	padding-top: 8vh;
 
 
 }
 
-.title-orange-work {
-	/* background: #e06d3f;
-	border-radius: 12em; */
-	/* margin-left: 0;
-	width: 100%;
-	height: 75%;
-	margin-top: -20vh;
-	padding-top: 200px;
-	padding-left: 10px;
-	color: #282828;
- */
+
+
+
+.black-top-work {
+	width: 5em;
+	float: center;
+	margin-left: 6.5vw;
+	margin-bottom: 3vh;
+	/* margin-right: auto; */
 }
 
-
-
-.white-top-work {
-	width: 40%;
-	margin-top: 5%;
-}
-
-.title-orange-work h1 {
-	font-size: 1000%;
+.title-work h1 {
+	font-size: 5em;
 	writing-mode: vertical-rl;
 	float: center;
 	margin-left: auto;
@@ -841,38 +832,51 @@ footer p {
 
 .work-overview {
 	height: 800px;
-	width: 80vw;
+	width: 70vw;
 	margin-top: 10px;
-	margin-left: 10vw;
-	text-align: center;
-
+	margin-left: 20vw;
+	text-align: justify;
+	
 }
 
 
-
+.description {
+	margin-top: 8vh;
+	margin-left: 2vw;
+}
 
 
 
 .description h3 {
-	font-size: 300%;
+	font-size: 200%;
+	/* text-align: center; */
+	margin-top: 10vh;
 }
 
 .work-first-par {
-	font-size: 200%;
+	font-size: 300%;
+	margin-bottom: 20px;
 }
 
-/* 
+
 .work-questions  {
-	font-size: 150%;
-	text-align: center;
+	/* font-size: 150%; */
+	font-weight: 200;
+	/* text-align: center; */
 	width: 100%;
-} */
+}
+
+.work-descript {
+	margin-top: calc(5vh);
+
+}
+
 
 .work-descript li {
 	list-style: none;
-	display: inline;
+	text-align: left;
 	font-weight: 200;
-	padding: 10px;
+	padding: 10px 0;
 	font-size: 160%;
 }
 
@@ -1098,20 +1102,20 @@ footer p {
 
 
 .mail-container {
-	height: 900px;
+	height: 200px;
 	width: 80vw;
 }
 
 .mail-windwow {
 	/*top: 400PX;*/
 	position: relative;
-	height: 700px;
+	height: 200px;
 	width: 75%;
 	margin: 0 auto;
-	background-color: rgba(255, 255, 255, .5);
+	/* background-color: rgba(255, 255, 255, .5); */
 	padding: 40px;
 	/*margin-bottom: 100px;*/
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
 }
 
 
@@ -1430,6 +1434,7 @@ footer p {
 		margin-left: 8vw;
 		margin-top: 32px;
 		font-size: 200%;
+		/* width: 80%; */
 		/* font-weight: 200; */
 	}
 
