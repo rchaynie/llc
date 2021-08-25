@@ -95,12 +95,12 @@ console.log(servicesScroll)
 
 
 
-const brandIcon = document.getElementById('brand-icon');
-const brandDiv = document.getElementById('branding-full');
-const gcICON = document.getElementById('gc-icon');
-const gcDiv = document.getElementById('gencon-full');
+// const brandIcon = document.getElementById('brand-icon');
+// const brandDiv = document.getElementById('branding-full');
+// const gcICON = document.getElementById('gc-icon');
+// const gcDiv = document.getElementById('gencon-full');
 
-console.log(brandIcon);
+// console.log(brandIcon);
 
 // brandIcon.addEventListener("click", function(){
 // 	smoothScroll('.branding-full', 950, 555)
@@ -112,24 +112,57 @@ console.log(brandIcon);
 // 	}
 // })
 
-gcICON.addEventListener("click", function(){
-	smoothScroll('.branding-full', 950, 555)
-	if(brandDiv.style.display === "none"){
-		gcICON.style.display = "block";
+
+
+
+
+// scrollDownClick.addEventListener("click", function() {
+// 	smoothScroll(".box1",950, 755)
+// })
+
+
+// scrollDownClick.addEventListener("click", function() {
+// 	smoothScroll(".box1",950, 755)
+// })
+
+
+
+const gcIcon = document.getElementById("gc-icon");
+const gcDiv = document.getElementById("gencon-full");
+const brandDiv = document.getElementById("branding-full");
+const mailDiv = document.getElementById("mail-full");
+
+
+console.log(gcIcon)
+
+
+gcIcon.addEventListener("click", function(){
+	if(gcDiv.style.display === "none"){
+		smoothScroll('.gencon', 950, 1500)
+		gcDiv.style.display = "block";
 	}
 	else {
-		gcICON.style.display = "none";
+		gcDiv.style.display = "none";
 	}
 })
 
 
+const pickAgain = document.getElementById("pick-again");
 
 
-scrollDownClick.addEventListener("click", function() {
-	smoothScroll(".box1",950, 755)
-})
-
-
-scrollDownClick.addEventListener("click", function() {
-	smoothScroll(".box1",950, 755)
+pickAgain.addEventListener("click", function(){
+	if(gcDiv.style.display === "block"){
+		// smoothScroll('.gcIcon', 950, 300);
+		gcDiv.style.display = "none";
+	}
+	else if (brandDiv.style.display === "block"){
+		// smoothScroll('.gcIcon', 200, 1500)
+		brandDiv.style.display = "none"; 
+		
+	}
+	else if (mailDiv.style.display === "block"){
+		// smoothScroll('.gcIcon', 200, 1500)
+		branmailDivdDiv.style.display = "none"; 
+		
+	}
 })

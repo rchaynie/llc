@@ -746,55 +746,24 @@ footer p {
 }
 
 
- 
-/*==================================
-=================Section headers ===========*/
-
-/* .section-header {
-	height: 80px;
-	width:80vw;
-} */
-/* .section-header-content {
-	background-color: rgba(44, 88, 168, 1);
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
-	width: 75%;
-	margin: 0 auto;
-	text-align: center;
-} */
-
-/* .section-header h1 {
-	margin-left: 15%;
-	padding: 5px;
-	color: white;
-} */
 
 
 .work-left-panel {
-	width: 20vw;
+	width: 23vw;
 	height: 100vh;
 	/* background: white; */
 	position: fixed;
 	/* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
 	z-index: 100;
 	color: #282828;
-	padding-top: 8vh;
+	padding-top: 12vh;
 
 
 }
 
-
-
-
-.black-top-work {
-	width: 5em;
-	float: center;
-	margin-left: 6.5vw;
-	margin-bottom: 3vh;
-	/* margin-right: auto; */
-}
 
 .title-work h1 {
-	font-size: 5em;
+	font-size: 7em;
 	writing-mode: vertical-rl;
 	float: center;
 	margin-left: auto;
@@ -807,31 +776,8 @@ footer p {
 
 
 
-
-
-
-
-/*==================================
-=================Work Overview====================*/
-
-.work-header {
-	width: 100vw;
-	height: 50vh;
-	
-	text-align: center;
-	padding-top: 60px; 
-	color: white;
-}
-
-.work-header h3 {
-	font-size: 950%;
-	text-shadow: 2px 2px #282828;
-
-}
-
-
 .work-overview {
-	height: 800px;
+	height: 1400px;
 	width: 70vw;
 	margin-top: 10px;
 	margin-left: 20vw;
@@ -842,96 +788,144 @@ footer p {
 
 .description {
 	margin-top: 8vh;
-	margin-left: 2vw;
+	margin-left: 9vw;
+	width: 60%;
+	height: 62%;
+	
+
 }
 
 
 
 .description h3 {
 	font-size: 200%;
-	/* text-align: center; */
-	margin-top: 10vh;
+
 }
 
 .work-first-par {
 	font-size: 300%;
-	margin-bottom: 20px;
-}
-
-
-.work-questions  {
-	/* font-size: 150%; */
-	font-weight: 200;
-	/* text-align: center; */
-	width: 100%;
-}
-
-.work-descript {
-	margin-top: calc(5vh);
-
-}
-
-
-.work-descript li {
-	list-style: none;
+	line-height: 2;
 	text-align: left;
-	font-weight: 200;
-	padding: 10px 0;
-	font-size: 160%;
+	/* margin-bottom: 20px; */
 }
 
 
 
+.work-selection {
+	height: 30%;
+	margin-left: 5vw;
+	padding-top: 5%;
+	
+}
+
+
+.selector-container {
+	/* margin-top: 60vh; */
+	margin-left: 2vw;
+	text-align: center;
+	/* padding-bottom: 20px; */
+	height: 35%;
+}
+
+.work-selection h3 {
+	margin-top: 10px;
+	color: white;
+	/* text-align: center; */
+}
+
+.header-icons {
+	height: 120px;
+	/* padding: 20px; */
+
+}
+.choice-icon:hover {
+	cursor: pointer;
+}
+
+
+/*==================================
+=================WORK-CATEGORY====================*/
+
+.work-category {
+	margin-left: 25vw;
+	height: 100vh;
+	margin-top: 15vh;
+	/* margin-bottom: 5vh; */
+
+}
+
+.section-header-content {
+	text-align: center;
+	margin-bottom: 8vh;
+}
 
 
 
+.sub-section h3 {
+	font-size: 170%;
+	margin-bottom: 2vh;
+}
+
+.sub-section p {
+	font-size: 200%;
+	text-align: justify;
+	width: 90%;
+	margin-top: 5vh;
 
 
+}
 
-
-
-
-.icon-container {
-	margin-top: 40px;
+.gc-full {
+	transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
 }
 
 
 
 /*==================================
-=================ICONS====================*/
+=================GC ICONS====================*/
 
-
-
-
-
-
-.icon-inner {
-	height: 1000px;
-	width: 75%;
-	/*padding: 20px;*/
-	/* background-color:rgba(255, 255, 255, .5);
-	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); */
-	/* margin: 0 auto;
-	position: relative; */
-
-} */
 
 
 .row {
-	margin: 30px;
+	margin-top: 30px;
+	text-align: center;
+	width: 90%;
 } 
 
-
-
-.icon-table .col {
-		/*margin-bottom: -850px;*/
-
+.sub-section .row {
+	text-align: left;
 }
+
+.sub-section .row h3 {
+	width: 130%;
+	float: left;
+}
+
+.pick-again {
+	float: right;
+	height: 100px;
+	width: 100px;
+	border-style: none;
+	border-radius: 4em;
+/* border-color: #51c1b2; */
+	text-align: center;
+	padding: 5px;
+	margin-right:20%;
+	background-color: #51c1b2;
+	color: white;
+}
+
+.pick-again:hover {
+	background: #282828;
+	color: white;
+	transition: background ease-in-out 250ms;
+}
+
 
 
 .icon-table {
 	
-	height: 275px;
+	/* height: 275px; */
 	width: 75vw;
 	padding: 20px;
 
@@ -943,22 +937,15 @@ footer p {
 
 
 .icon-table .row {
-	margin-left: 5vw;
+	/* margin-left: 5vw; */
 
  }
 
 
 .icons {
 	height: 100px;
-
-
+	margin-bottom: 2vh;
 }
-
-.icon-description {
-	/* padding-left: 100px; */
-	/*margin-left: 100px;*/
-}
-
 
 
 
