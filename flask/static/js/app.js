@@ -166,3 +166,53 @@ pickAgain.addEventListener("click", function(){
 		
 	}
 })
+
+
+
+
+// ==================
+// ===================GC-ICON-CARDS============
+// =================================================
+
+
+const bulbHover = document.getElementById("bulb-hover")
+const bulbCard = document.getElementById("bulb-card")
+const bulbArrow = document.getElementById("bulb-up-arrow")
+
+const directHover = document.getElementById("direct-hover")
+const directCard = document.getElementById("direct-card")
+const directArrow = document.getElementById("direct-up-arrow")
+
+const financeHover = document.getElementById("finance-hover")
+const financeCard = document.getElementById("finance-card")
+const financeArrow = document.getElementById("finance-up-arrow")
+
+function showBulbCard(){
+	bulbCard.style.opacity = '1';
+	bulbArrow.style.opacity = '1';
+}
+
+function hideBulbCard(){
+	bulbCard.style.opacity = '0';
+	bulbArrow.style.opacity = '0';
+}
+
+function showDirectCard(){
+	directCard.style.opacity = '1';
+	directArrow.style.opacity = '1';
+}
+
+function hideDirectCard(){
+	directCard.style.opacity = '0';
+	directArrow.style.opacity = '0';
+}
+
+function showFinanceCard(){
+	financeCard.style.opacity = '1';
+	financeArrow.style.opacity = '1';
+}
+
+function hideFinanceCard(){
+	financeCard.style.opacity = '0';
+	financeArrow.style.opacity = '0';
+}

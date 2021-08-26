@@ -922,12 +922,18 @@ footer p {
 }
 
 
+.gc-icons {
+	/* background-color: yellow; */
+}
+
 
 .icon-table {
 	
 	/* height: 275px; */
 	width: 75vw;
 	padding: 20px;
+	/* background-color: blue; */
+	
 
 } 
 
@@ -946,6 +952,78 @@ footer p {
 	height: 100px;
 	margin-bottom: 2vh;
 }
+
+
+/* ================GC-CARDS=====
+================================== */
+
+.bulb-hover,
+.direct-hover,
+.finance-hover {
+	position: relative;
+}
+
+.bulb-hover:hover,
+.direct-hover:hover,
+.finance-hover:hover {
+	opacity: .5;
+	transition: opacity 300ms;
+
+}
+
+
+.bulb-card,
+.direct-card,
+.finance-card {
+	/* border: solid #282828 1px; */
+	background-color: #282828;
+	border-radius: 1em;
+	text-align: justify;
+	position: absolute;
+	height: 85%;
+	top:100;
+	left:0;
+	width: 100%;
+	display: flex;
+	z-index: 1;
+	color: white;
+	opacity: 0;
+	transition: opacity 300ms;
+	padding: 12px;
+}
+
+.bulb-up-arrow,
+.direct-up-arrow,
+.finance-up-arrow {
+	border-top: 0px solid #282828;
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.bulb-up-arrow::after,
+.direct-up-arrow::after,
+.finance-up-arrow::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid #282828;
+	border-left: 35px solid transparent;
+	border-right:35px solid transparent;
+	
+}
+
+
+.bulb-card p, .direct-card, .finance-card p {
+	width: 100%;
+}
+
+
+
 
 
 
